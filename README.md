@@ -39,7 +39,18 @@ RNDisableBatteryOptimizationsAndroid.isBatteryOptimizationEnabled().then((isEnab
 	}
 });
 
-// for direct whitelisting
+// for direct whitelisting app with Instant Dialogue 
+//The user will be taken to a screen where they can indicate that they are willing to suspend portions of Doze mode effects on your app.
+Note: Play store will not allow using this method, and will allow only as an exception
+
+
 RNDisableBatteryOptimizationsAndroid.enableBackgroundServicesDialogue();
+
+Also 
+Add  this permission in your AndroidManifest.xml
+
+<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+
 ```
   

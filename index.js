@@ -1,6 +1,8 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNDisableBatteryOptimizationsandroid } = NativeModules;
+const { RNDisableBatteryOptimizationsAndroid } = NativeModules;
 
-export default RNDisableBatteryOptimizationsandroid;
+export default RNDisableBatteryOptimizationsAndroid;
+
+

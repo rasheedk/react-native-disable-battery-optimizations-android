@@ -1,6 +1,6 @@
 {
   "name": "react-native-disable-battery-optimizations-android",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A react native library for checking battery optimization and whitelisting in Android",
   "main": "index.js",
   "scripts": {
