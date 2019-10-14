@@ -7,12 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
-	 "settings",
+    "react-native",
+    "settings",
     "android",
     "open",
-	"battery-optimizations",
-	 "background service"
+    "battery-optimizations",
+    "background service"
   ],
   "repository": {
     "type": "git",
