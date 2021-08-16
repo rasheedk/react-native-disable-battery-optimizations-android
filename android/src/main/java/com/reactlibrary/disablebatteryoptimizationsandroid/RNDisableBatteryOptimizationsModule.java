@@ -26,7 +26,10 @@ public class RNDisableBatteryOptimizationsModule extends ReactContextBaseJavaMod
 	  if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 		    String packageName = reactContext.getPackageName();
 			Intent intent = new Intent();
-			intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
+		  	// If you use "ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS", then the chances are your app will be rejected from the playStore.
+		  	// For more info: https://stackoverflow.com/questions/33114063/how-do-i-properly-fire-action-request-ignore-battery-optimizations-intent
+		  	// We should be using this "ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS", also it will not need any permission in Manifest.
+			intent.setAction(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS);
 			intent.setData(Uri.parse("package:" + packageName));
 			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			reactContext.startActivity(intent);
